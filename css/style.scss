@@ -125,7 +125,6 @@ html{
                         }
 
                         .msg-erro{
-                            display: none;
                             color:$--red;
                             font-size: .6rem;
                             font-family: $ff-poppins;
@@ -134,6 +133,12 @@ html{
                             position: relative;
                             padding:0 0 5px 0;
                             
+                        }
+                        .input-erro{
+                            border: 1px solid $--red;
+                        }
+                        .input-ok{
+                            border: 1px solid $--green;
                         }
                     }
 
@@ -148,6 +153,11 @@ html{
                         color:$--white;
                         font-family: $ff-poppins;
                         margin:10px 0;
+                        transition: .3s;
+
+                        &:hover{
+                            filter: opacity(.7);
+                        }
                     }
                     p{
                         color: $--gray-blue;
