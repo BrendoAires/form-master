@@ -7,6 +7,8 @@ $--blue:hsl(248, 32%, 49%);
 $--dark-blue:hsl(249, 10%, 26%) ;
 $--gray-blue:hsl(246, 25%, 77%);
 
+$--white: #fff;
+
 
 $ff-poppins: 'Poppins', sans-serif;
 $fw-400: 400;
@@ -16,7 +18,154 @@ $fw-700: 700;
 
 
 
+html{
+    background: $--red;
+    
+    max-height:100vh;
+
+    body{
+        
+        margin: 0;
+        
+        .img{
+            opacity:1;
+            position: absolute;
+            z-index: -10;
+            
+            
+            
+        }
+
+        main{
+            width: 70%;
+            margin: 0 auto;
+            padding:20px;
+            .titulo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                height: 50%;
+                padding-top: 30px;
+                font-family: $ff-poppins;
+                
+                h1{
+                    font-size: 2rem;
+                    color: $--white;
+                }
+                p{
+                    font-size: .9rem;
+                    color:$--white;
+                    font-weight: $fw-400;
+                    line-height: 25px;
+
+                }
+            }
+
+            .container-principal{
+                
+                .banner{
+                    background: $--blue;
+                    padding:10px 50px;
+                    border-radius: 5px;
+                    font-family: $ff-poppins;
+                    text-align: center;
+                    box-shadow: 0 5px $--dark-blue;
+                    margin: 20px 0;
+
+                    p{
+                        color:$--white;
+                        font-size: .87rem;
+
+                        span{
+                            font-weight:$fw-600;
+                            font-size: .9rem;
+                        }
+                    }
+
+                }
+                .container-form{
+                    padding:20px;
+                    background: $--white;
+                    border-radius: 5px;
+                    box-shadow: 0 5px $--dark-blue;
+
+                    form{
+                        display: flex;
+                        flex-direction: column;
+
+                        input{
+                            margin: 5px 0;
+                            height:30px;
+                            border-radius: 5px;
+                            
+                            border:1px solid $--gray-blue;
+                            
+                            &::placeholder{
+                        
+                                
+                                font-weight:500;
+                                padding: 0 10px;
+                            }
+                            input[text]{
+                                color:red;
+                                padding:50px;
+                            }
+                            
+                        }
+                    }
+
+                    .button{
+                        background: $--green;
+                        border-radius: 5px;
+                        height:50px;
+                        border:0;
+                        font-weight: 600;
+                        box-shadow: 0 5px $--dark-blue;
+                        text-transform: uppercase;
+                        color:$--white;
+                        font-family: $ff-poppins;
+                        margin:10px 0;
+                    }
+                    p{
+                        color: $--gray-blue;
+                        font-weight: 600;
+                        font-family: $ff-poppins;
+                        padding:0 15px;
+                        font-size: .6rem;
+                        line-height: 15px;
+                        text-align: center;
+                        span{
+                            color:red;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer{
+
+            .attribution { 
+                font-size: .7rem;
+                font-weight: 600; 
+                text-align: center; 
+                font-family: $ff-poppins;
+                margin-top: 100px;
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+                a{ 
+                    color: hsl(228, 45%, 44%); 
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+
